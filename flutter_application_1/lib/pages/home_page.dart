@@ -7,15 +7,16 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'AsesinAPP',
-          textAlign: TextAlign.center,
-        ),
-        centerTitle: true,
-      ),
       body: Container(
-        color: Color(0xFF9C9994),
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+          colors: [
+            Colors.grey,
+            Colors.black,
+          ],
+        )),
         child: Padding(
           padding: EdgeInsets.all(8),
           child: ListView(
@@ -26,7 +27,7 @@ class HomePage extends StatelessWidget {
                 height: 300,
               ),
               Text(
-                'Inicio de sesiòn',
+                'Inicio de sesión',
                 style: TextStyle(fontSize: 18, color: Colors.white),
               ),
               Divider(),

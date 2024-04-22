@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/pages/afiliaciones_page.dart';
 import 'package:flutter_application_1/pages/contratos_page.dart';
+import 'package:flutter_application_1/pages/home_page.dart';
 import 'package:flutter_application_1/pages/hoteles_page.dart';
 import 'package:flutter_application_1/pages/perfil_page.dart';
 import 'package:flutter_application_1/pages/servicios_page.dart';
@@ -13,12 +14,27 @@ class HomeInicio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Hola'),
-      ),
+      appBar: AppBar(),
       drawer: Drawer(
+        backgroundColor: Colors.white,
         child: ListView(
           children: [
+            ListTile(
+              title: Text('Inicio'),
+              leading: Icon(
+                MdiIcons.home,
+                color: Colors.black,
+              ),
+              onTap: () {
+                print('Inicio seleccionado');
+                MaterialPageRoute rutaHomeInicioPage =
+                    MaterialPageRoute(builder: (context) {
+                  return HomeInicio();
+                });
+                Navigator.push(context, rutaHomeInicioPage);
+              },
+            ),
+            Divider(),
             ListTile(
               title: Text('Perfil'),
               leading: Icon(
@@ -99,15 +115,17 @@ class HomeInicio extends StatelessWidget {
               },
             ),
             Divider(),
-            Expanded(
-              child: SizedBox(),
-            ),
             ListTile(
-              title: Text('Cerrar Sesiòn'),
+              title: Text('Cerrar Sesión'),
               leading: Icon(Icons.logout, color: Colors.black),
               onTap: () {
-                print('Cerrar sesiòn seleccionado');
-                Navigator.pop(context);
+                MaterialPageRoute rutaHomePage = MaterialPageRoute(
+                  builder: (context) {
+                    return HomePage();
+                  },
+                );
+
+                Navigator.push(context, rutaHomePage);
               },
             ),
           ],
