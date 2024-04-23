@@ -5,6 +5,7 @@ import 'package:flutter_application_1/pages/home_inicio.dart';
 import 'package:flutter_application_1/pages/home_page.dart';
 import 'package:flutter_application_1/pages/perfil_page.dart';
 import 'package:flutter_application_1/pages/servicios_page.dart';
+import 'package:flutter_application_1/widgets/hoteles_card.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class HotelesPage extends StatelessWidget {
@@ -129,6 +130,26 @@ class HotelesPage extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      body: Column(
+        children: [
+          HotelesCard(
+              imagen: 'assets/images/zachir.jpg',
+              nombre: 'Hotel zachir faundez',
+              ubicacion: 'Belloto'),
+          HotelesCard(
+              imagen: 'assets/images/zachir.jpg',
+              nombre: 'Hotel zachir faundez',
+              ubicacion: 'Belloto'),
+          HotelesCard(
+              imagen: 'assets/images/zachir.jpg',
+              nombre: 'Hotel zachir faundez',
+              ubicacion: 'Belloto'),
+          HotelesCard(
+              imagen: 'assets/images/zachir.jpg',
+              nombre: 'Hotel zachir faundez',
+              ubicacion: 'Belloto')
+        ],
       ),
     );
   }
