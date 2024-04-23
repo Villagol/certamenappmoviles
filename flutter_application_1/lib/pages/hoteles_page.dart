@@ -14,7 +14,9 @@ class HotelesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('Hoteles'),
+      ),
       drawer: Drawer(
         backgroundColor: Colors.white,
         child: ListView(
@@ -134,21 +136,21 @@ class HotelesPage extends StatelessWidget {
       body: Column(
         children: [
           HotelesCard(
-              imagen: 'assets/images/zachir.jpg',
-              nombre: 'Hotel zachir faundez',
-              ubicacion: 'Belloto'),
+              imagen: 'assets/images/hotelny.jpg',
+              nombre: 'Continental New York',
+              ubicacion: 'New York, USA'),
           HotelesCard(
-              imagen: 'assets/images/zachir.jpg',
-              nombre: 'Hotel zachir faundez',
-              ubicacion: 'Belloto'),
+              imagen: 'assets/images/hotelroma.jpg',
+              nombre: 'Continental Roma',
+              ubicacion: 'Roma, Italy'),
           HotelesCard(
-              imagen: 'assets/images/zachir.jpg',
-              nombre: 'Hotel zachir faundez',
-              ubicacion: 'Belloto'),
+              imagen: 'assets/images/hotelcb.jpg',
+              nombre: 'Continental Casablanca',
+              ubicacion: 'Casablanca, Marruecos'),
           HotelesCard(
-              imagen: 'assets/images/zachir.jpg',
-              nombre: 'Hotel zachir faundez',
-              ubicacion: 'Belloto')
+              imagen: 'assets/images/hotelosaka.jpg',
+              nombre: 'Continental Osaka',
+              ubicacion: 'Osaka, Japan'),
         ],
       ),
     );

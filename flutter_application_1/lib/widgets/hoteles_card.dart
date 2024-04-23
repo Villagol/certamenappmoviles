@@ -14,24 +14,49 @@ class HotelesCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-      margin: EdgeInsets.all(8),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          ListTile(
-            title: Text(nombre),
-            subtitle: Text(ubicacion),
-            leading: Image.asset(
-              imagen,
-              width: 60,
-              height: 60,
-              fit: BoxFit.cover,
-            ),
+      elevation: 6,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+      ),
+      margin: EdgeInsets.all(16),
+      child: Container(
+        height: 150,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15),
+          image: DecorationImage(
+            image: AssetImage(imagen),
+            fit: BoxFit.cover,
           ),
-          TextButton(
-              onPressed: () {
-                showDialog(
+        ),
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: ListTile(
+            contentPadding: EdgeInsets.zero,
+            title: Padding(
+              padding: EdgeInsets.only(right: 16),
+              child: Text(
+                nombre,
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            subtitle: Padding(
+              padding: EdgeInsets.only(right: 16),
+              child: Text(
+                ubicacion,
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            trailing: Padding(
+              padding: EdgeInsets.only(left: 16),
+              child: ElevatedButton(
+                onPressed: () {
+                  showDialog(
                     context: context,
                     builder: (BuildContext context) {
                       return AlertDialog(
@@ -40,16 +65,27 @@ class HotelesCard extends StatelessWidget {
                             Text('La habitación ha sido reservada con éxito'),
                         actions: [
                           TextButton(
-                              onPressed: () {
-                                Navigator.of(context).pop();
-                              },
-                              child: Text('Aceptar'))
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                            child: Text('Aceptar'),
+                          ),
                         ],
                       );
-                    });
-              },
-              child: Text('Reservar'))
-        ],
+                    },
+                  );
+                },
+                child: Text('Reservar'),
+                style: ElevatedButton.styleFrom(
+                  textStyle: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }

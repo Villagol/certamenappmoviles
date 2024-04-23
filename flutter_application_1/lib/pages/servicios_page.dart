@@ -13,7 +13,9 @@ class ServiciosPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('Servicios'),
+      ),
       drawer: Drawer(
         backgroundColor: Colors.white,
         child: ListView(
@@ -130,6 +132,7 @@ class ServiciosPage extends StatelessWidget {
           ],
         ),
       ),
+      body: Container(),
     );
   }
 }
