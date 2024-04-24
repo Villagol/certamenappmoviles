@@ -132,7 +132,15 @@ class HomeInicio extends StatelessWidget {
         ),
       ),
       body: Container(
-        color: Colors.black,
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+          colors: [
+            Colors.grey,
+            Colors.white,
+          ],
+        )),
         child: Padding(
           padding: EdgeInsets.all(8),
           child: ListView(
@@ -140,16 +148,21 @@ class HomeInicio extends StatelessWidget {
               Title(
                 color: Colors.black,
                 child: Text(
-                  'Bienvenido The Adjudicator',
+                  'Bienvenid@ Asesin@',
                   style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
                       fontSize: 30,
-                      backgroundColor: Colors.black,
-                      color: Colors.white),
+                      color: Colors.black),
                 ),
               ),
-              Image.asset('assets/images/fondo.jpg'),
+              Image.asset(
+                'assets/images/logotipo.jpg',
+                width: 300,
+                height: 500,
+              ),
               SizedBox(
-                height: 60,
+                height: 10,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,

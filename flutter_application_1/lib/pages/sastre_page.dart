@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 @override
-class SommelierPage extends StatelessWidget {
+class SastrePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200],
@@ -25,14 +25,14 @@ class SommelierPage extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(10.0),
               child: Image.asset(
-                'assets/images/sommelier2.jpg',
+                'assets/images/sastre2.jpg',
                 fit: BoxFit.cover,
               ),
             ),
           ),
           SizedBox(height: 20),
           Text(
-            'The Sommelier',
+            'The Tailor',
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
@@ -42,13 +42,13 @@ class SommelierPage extends StatelessWidget {
           ),
           SizedBox(height: 20),
           Text(
-            'El Sommelier es un servicio exclusivo ofrecido por The Continental.',
+            'Es un sastre y modisto experto que ofrece sus servicios a la comunidad de asesinos y criminales. Es conocido por sus habilidades excepcionales en la confección de trajes a medida.',
             style: TextStyle(fontSize: 16, color: Colors.black),
             textAlign: TextAlign.justify,
           ),
           SizedBox(height: 20),
           Text(
-            'Ubicaciones:',
+            'Ubicación:',
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -57,42 +57,28 @@ class SommelierPage extends StatelessWidget {
           ),
           SizedBox(height: 10),
           Text(
-            '- The Continental: Nueva York',
-            style: TextStyle(fontSize: 16, color: Colors.black),
-          ),
-          Text(
-            '- The Continental: Casablanca',
-            style: TextStyle(fontSize: 16, color: Colors.black),
-          ),
-          Text(
-            '- The Continental: Roma',
+            'The Tailor opera en un taller de sastrería clandestino ubicado en una calle lateral de la ciudad de Nueva York.',
             style: TextStyle(fontSize: 16, color: Colors.black),
           ),
           SizedBox(height: 20),
           Text(
-            'Principales armas y códigos:',
+            'Servicios:',
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
               color: Colors.black,
             ),
           ),
-          SizedBox(height: 10),
           Text(
-            'El Sommelier proporciona una amplia variedad de armas de fuego, cuchillos y otros artefactos mortales, adaptados a las necesidades y preferencias de los clientes. Algunos de los códigos utilizados para solicitar armas son:',
-            style: TextStyle(fontSize: 16, color: Colors.black),
-          ),
-          SizedBox(height: 10),
-          Text(
-            '- "Chianti" para un arma corta',
+            '- Confección de trajes a medida: Creación de prendas personalizadas que se ajustan perfectamente a las medidas y preferencias del cliente.',
             style: TextStyle(fontSize: 16, color: Colors.black),
           ),
           Text(
-            '- "Merlot" para un arma larga',
+            '- Modificaciones y ajustes: Ajustes en prendas existentes para mejorar su ajuste y estilo según las preferencias del cliente.',
             style: TextStyle(fontSize: 16, color: Colors.black),
           ),
           Text(
-            '- "Barolo" para munición',
+            '- Personalización y detalles especiales: Adición de detalles únicos y funcionales a las prendas para mejorar su apariencia y funcionalidad, ofreciendo a los clientes una experiencia de vestuario personalizada.',
             style: TextStyle(fontSize: 16, color: Colors.black),
           ),
           SizedBox(height: 20),
@@ -106,7 +92,7 @@ class SommelierPage extends StatelessWidget {
           ),
           SizedBox(height: 10),
           Text(
-            'El Sommelier ofrece sus servicios con absoluta discreción y profesionalismo. Se espera que los clientes cumplan con las reglas y códigos de conducta de The Continental para mantener la paz y la neutralidad del lugar.',
+            'A pesar de trabajar para la comunidad criminal, The Tailor mantiene un estricto código de discreción y confidencialidad con sus clientes. Es conocido por su profesionalismo y lealtad a aquellos que lo contratan.',
             style: TextStyle(fontSize: 16, color: Colors.black),
           ),
         ],

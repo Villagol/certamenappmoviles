@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 @override
-class SommelierPage extends StatelessWidget {
+class DoctorPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
-        title: Text('Sommelier'),
+        title: Text('The Doctor'),
       ),
       body: ListView(
         padding: EdgeInsets.all(16.0),
@@ -25,14 +25,14 @@ class SommelierPage extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(10.0),
               child: Image.asset(
-                'assets/images/sommelier2.jpg',
+                'assets/images/doctor2.jpg',
                 fit: BoxFit.cover,
               ),
             ),
           ),
           SizedBox(height: 20),
           Text(
-            'The Sommelier',
+            'The Doctor',
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
@@ -42,13 +42,7 @@ class SommelierPage extends StatelessWidget {
           ),
           SizedBox(height: 20),
           Text(
-            'El Sommelier es un servicio exclusivo ofrecido por The Continental.',
-            style: TextStyle(fontSize: 16, color: Colors.black),
-            textAlign: TextAlign.justify,
-          ),
-          SizedBox(height: 20),
-          Text(
-            'Ubicaciones:',
+            'Ubicación:',
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -57,20 +51,12 @@ class SommelierPage extends StatelessWidget {
           ),
           SizedBox(height: 10),
           Text(
-            '- The Continental: Nueva York',
-            style: TextStyle(fontSize: 16, color: Colors.black),
-          ),
-          Text(
-            '- The Continental: Casablanca',
-            style: TextStyle(fontSize: 16, color: Colors.black),
-          ),
-          Text(
-            '- The Continental: Roma',
+            '-The Doctor opera en una clínica clandestina ubicada en la parte trasera de una lavandería en la ciudad de Nueva York.',
             style: TextStyle(fontSize: 16, color: Colors.black),
           ),
           SizedBox(height: 20),
           Text(
-            'Principales armas y códigos:',
+            'Servicio:',
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -79,22 +65,10 @@ class SommelierPage extends StatelessWidget {
           ),
           SizedBox(height: 10),
           Text(
-            'El Sommelier proporciona una amplia variedad de armas de fuego, cuchillos y otros artefactos mortales, adaptados a las necesidades y preferencias de los clientes. Algunos de los códigos utilizados para solicitar armas son:',
+            'The Doctor ofrece servicios médicos y quirúrgicos discretos para la comunidad criminal. Él trata a heridos y se encarga de extraer balas y otros objetos extraños de sus pacientes sin hacer preguntas incómodas.',
             style: TextStyle(fontSize: 16, color: Colors.black),
           ),
           SizedBox(height: 10),
-          Text(
-            '- "Chianti" para un arma corta',
-            style: TextStyle(fontSize: 16, color: Colors.black),
-          ),
-          Text(
-            '- "Merlot" para un arma larga',
-            style: TextStyle(fontSize: 16, color: Colors.black),
-          ),
-          Text(
-            '- "Barolo" para munición',
-            style: TextStyle(fontSize: 16, color: Colors.black),
-          ),
           SizedBox(height: 20),
           Text(
             'Importante:',
@@ -106,7 +80,7 @@ class SommelierPage extends StatelessWidget {
           ),
           SizedBox(height: 10),
           Text(
-            'El Sommelier ofrece sus servicios con absoluta discreción y profesionalismo. Se espera que los clientes cumplan con las reglas y códigos de conducta de The Continental para mantener la paz y la neutralidad del lugar.',
+            'A pesar de ser parte del mundo criminal, The Doctor sigue un código ético y profesional en su trabajo. Se asegura de mantener la confidencialidad de sus pacientes y ofrece sus servicios sin juzgar.',
             style: TextStyle(fontSize: 16, color: Colors.black),
           ),
         ],

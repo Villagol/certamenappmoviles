@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
           end: Alignment.bottomLeft,
           colors: [
             Colors.grey,
-            Colors.black,
+            Colors.black12,
           ],
         )),
         child: Padding(
@@ -22,13 +22,15 @@ class HomePage extends StatelessWidget {
           child: ListView(
             children: [
               Image.asset(
-                'assets/images/ImagenInicio.jpg',
+                'assets/images/logotipo.jpg',
                 width: 300,
                 height: 300,
               ),
               Text(
                 'Inicio de sesión',
-                style: TextStyle(fontSize: 18, color: Colors.white),
+                style: TextStyle(
+                  fontSize: 18,
+                ),
               ),
               Divider(),
               Container(

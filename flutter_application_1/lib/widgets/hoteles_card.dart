@@ -68,14 +68,17 @@ class HotelesCard extends StatelessWidget {
                             onPressed: () {
                               Navigator.of(context).pop();
                             },
-                            child: Text('Aceptar'),
+                            child: Text(
+                              'Aceptar',
+                              style: TextStyle(color: Colors.black),
+                            ),
                           ),
                         ],
                       );
                     },
                   );
                 },
-                child: Text('Reservar'),
+                child: Text('Reservar', style: TextStyle(color: Colors.black)),
                 style: ElevatedButton.styleFrom(
                   textStyle: TextStyle(
                     fontSize: 16,
