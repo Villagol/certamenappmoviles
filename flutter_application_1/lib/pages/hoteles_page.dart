@@ -133,25 +133,36 @@ class HotelesPage extends StatelessWidget {
           ],
         ),
       ),
-      body: Column(
-        children: [
-          HotelesCard(
-              imagen: 'assets/images/hotelny.jpg',
-              nombre: 'Continental New York',
-              ubicacion: 'New York, USA'),
-          HotelesCard(
-              imagen: 'assets/images/hotelroma.jpg',
-              nombre: 'Continental Roma',
-              ubicacion: 'Roma, Italy'),
-          HotelesCard(
-              imagen: 'assets/images/hotelcb.jpg',
-              nombre: 'Continental Casablanca',
-              ubicacion: 'Casablanca, Morocco'),
-          HotelesCard(
-              imagen: 'assets/images/hotelosaka.jpg',
-              nombre: 'Continental Osaka',
-              ubicacion: 'Osaka, Japan'),
-        ],
+      body: Container(
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Colors.grey,
+            Colors.white,
+          ],
+        )),
+        child: Column(
+          children: [
+            HotelesCard(
+                imagen: 'assets/images/hotelny.jpg',
+                nombre: 'Continental New York',
+                ubicacion: 'New York, USA'),
+            HotelesCard(
+                imagen: 'assets/images/hotelroma.jpg',
+                nombre: 'Continental Roma',
+                ubicacion: 'Roma, Italy'),
+            HotelesCard(
+                imagen: 'assets/images/hotelcb.jpg',
+                nombre: 'Continental Casablanca',
+                ubicacion: 'Casablanca, Morocco'),
+            HotelesCard(
+                imagen: 'assets/images/hotelosaka.jpg',
+                nombre: 'Continental Osaka',
+                ubicacion: 'Osaka, Japan'),
+          ],
+        ),
       ),
     );
   }

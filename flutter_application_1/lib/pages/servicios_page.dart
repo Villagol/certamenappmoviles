@@ -23,7 +23,7 @@ class ServiciosPage extends StatelessWidget {
           title: Text('Servicios'),
           bottom: TabBar(
             labelColor: Colors.red,
-            unselectedLabelColor: Colors.black,
+            unselectedLabelColor: Colors.white,
             indicatorColor: Colors.red,
             isScrollable: true,
             tabs: [
