@@ -22,7 +22,7 @@ class Hotelc extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.all(8),
                 child: Text(
-                  'Es una red de hoteles exclusivos que sirven como refugio seguro para asesinos y criminales de alto perfil. Estos hoteles están dirigidos por el Gerente, quien hace cumplir las estrictas reglas que prohíben la violencia dentro de sus instalaciones. Los miembros del Hotel Continental tienen acceso a servicios y recursos especiales, como suministros de armas y asistencia médica.',
+                  'The Continental Es una red de hoteles exclusivos que sirven como refugio seguro para asesinos y criminales de alto perfil. Estos hoteles están dirigidos por el Gerente, quien hace cumplir las estrictas reglas que prohíben la violencia dentro de sus instalaciones. Los miembros del Hotel Continental tienen acceso a servicios y recursos especiales, como suministros de armas y asistencia médica.',
                   textAlign: TextAlign.justify,
                   style: TextStyle(fontSize: 16),
                 ),

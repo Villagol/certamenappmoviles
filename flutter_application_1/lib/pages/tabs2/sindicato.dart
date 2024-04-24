@@ -15,7 +15,7 @@ class Sindicato extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.all(8),
                 child: Text(
-                  'Es una organización criminal global compuesta por asesinos a sueldo, mercenarios y otros criminales de élite. Este sindicato opera bajo la dirección de la Alta Mesa y facilita contratos de asesinato, proporciona recursos logísticos y mantiene una red de información sobre objetivos y clientes potenciales.',
+                  'El sindicato es una organización criminal global compuesta por asesinos a sueldo, mercenarios y otros criminales de élite. Este sindicato opera bajo la dirección de la Alta Mesa y facilita contratos de asesinato, proporciona recursos logísticos y mantiene una red de información sobre objetivos y clientes potenciales.',
                   textAlign: TextAlign.justify,
                   style: TextStyle(fontSize: 16),
                 ),

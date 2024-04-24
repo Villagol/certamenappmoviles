@@ -15,7 +15,7 @@ class Clanasesi extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.all(8),
                 child: Text(
-                  'Son grupos organizados de asesinos con sus propias tradiciones, reglas y estructuras internas. Cada clan puede tener un enfoque particular en cuanto a sus métodos de asesinato y especialidades. Algunos ejemplos de clanes mencionados en la película incluyen el clan ruso liderado por Viggo Tarasov y el clan italiano liderado por Santino D Antonio.',
+                  'Los clanes asesinos son grupos organizados de asesinos con sus propias tradiciones, reglas y estructuras internas. Cada clan puede tener un enfoque particular en cuanto a sus métodos de asesinato y especialidades. Algunos ejemplos de clanes incluyen el clan ruso liderado por Viggo Tarasov y el clan italiano liderado por Santino D Antonio.',
                   textAlign: TextAlign.justify,
                   style: TextStyle(fontSize: 16),
                 ),
