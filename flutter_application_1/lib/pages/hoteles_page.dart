@@ -146,7 +146,7 @@ class HotelesPage extends StatelessWidget {
           HotelesCard(
               imagen: 'assets/images/hotelcb.jpg',
               nombre: 'Continental Casablanca',
-              ubicacion: 'Casablanca, Marruecos'),
+              ubicacion: 'Casablanca, Morocco'),
           HotelesCard(
               imagen: 'assets/images/hotelosaka.jpg',
               nombre: 'Continental Osaka',
