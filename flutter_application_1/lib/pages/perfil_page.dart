@@ -13,7 +13,9 @@ class PerfilPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('Perfil'),
+      ),
       drawer: Drawer(
         backgroundColor: Colors.white,
         child: ListView(
@@ -130,42 +132,50 @@ class PerfilPage extends StatelessWidget {
           ],
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8),
-        child: Column(
-          children: [
-            SizedBox(height: 40),
-            CircleAvatar(
-              radius: 60,
-              backgroundImage: AssetImage('assets/images/zachir.jpg'),
-            ),
-            SizedBox(height: 20),
-            ListTile(
-              title: Text('Nombre: '),
-              subtitle: Text('Kristhobal Riquelme'),
-              leading: Icon(MdiIcons.head),
-            ),
-            ListTile(
-              title: Text('Edad: '),
-              subtitle: Text('21 años'),
-              leading: Icon(MdiIcons.formatListNumbered),
-            ),
-            ListTile(
-              title: Text('Nacionalidad: '),
-              subtitle: Text('Chileno'),
-              leading: Icon(MdiIcons.flag),
-            ),
-            ListTile(
-              title: Text('Ciudad de residencia: '),
-              subtitle: Text('Tokio'),
-              leading: Icon(MdiIcons.city),
-            ),
-            ListTile(
-              title: Text('Cantidad de asesinatos '),
-              subtitle: Text('89'),
-              leading: Icon(MdiIcons.pistol),
-            ),
-          ],
+      body: Container(
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [Colors.white, Colors.grey],
+        )),
+        child: Padding(
+          padding: const EdgeInsets.all(8),
+          child: Column(
+            children: [
+              SizedBox(height: 40),
+              CircleAvatar(
+                radius: 60,
+                backgroundImage: AssetImage('assets/images/zachir.jpg'),
+              ),
+              SizedBox(height: 20),
+              ListTile(
+                title: Text('Nombre: '),
+                subtitle: Text('Kristhobal Riquelme'),
+                leading: Icon(MdiIcons.head),
+              ),
+              ListTile(
+                title: Text('Edad: '),
+                subtitle: Text('21 años'),
+                leading: Icon(MdiIcons.formatListNumbered),
+              ),
+              ListTile(
+                title: Text('Nacionalidad: '),
+                subtitle: Text('Chileno'),
+                leading: Icon(MdiIcons.flag),
+              ),
+              ListTile(
+                title: Text('Ciudad de residencia: '),
+                subtitle: Text('Tokio'),
+                leading: Icon(MdiIcons.city),
+              ),
+              ListTile(
+                title: Text('Cantidad de asesinatos '),
+                subtitle: Text('89'),
+                leading: Icon(MdiIcons.pistol),
+              ),
+            ],
+          ),
         ),
       ),
     );

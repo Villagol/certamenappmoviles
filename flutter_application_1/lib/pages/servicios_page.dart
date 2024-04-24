@@ -30,7 +30,7 @@ class ServiciosPage extends StatelessWidget {
               Column(
                 children: [
                   Tab(
-                    icon: Icon(MdiIcons.pistol),
+                    icon: Icon(MdiIcons.pistol, color: Colors.white),
                     text: 'Sommelier',
                   ),
                 ],
@@ -38,7 +38,7 @@ class ServiciosPage extends StatelessWidget {
               Column(
                 children: [
                   Tab(
-                    icon: Icon(MdiIcons.doctor),
+                    icon: Icon(MdiIcons.doctor, color: Colors.white),
                     text: 'Doctor',
                   ),
                 ],
@@ -46,7 +46,7 @@ class ServiciosPage extends StatelessWidget {
               Column(
                 children: [
                   Tab(
-                    icon: Icon(MdiIcons.hanger),
+                    icon: Icon(MdiIcons.hanger, color: Colors.white),
                     text: 'Sastre',
                   ),
                 ],
@@ -54,7 +54,7 @@ class ServiciosPage extends StatelessWidget {
               Column(
                 children: [
                   Tab(
-                    icon: Icon(MdiIcons.sprayBottle),
+                    icon: Icon(MdiIcons.sprayBottle, color: Colors.white),
                     text: 'Limpiadores',
                   ),
                 ],
@@ -177,8 +177,19 @@ class ServiciosPage extends StatelessWidget {
             ],
           ),
         ),
-        body: TabBarView(
-          children: [Sommelier(), Doctor(), Sastre(), Limpiadores()],
+        body: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Colors.grey,
+              Colors.white,
+            ],
+          )),
+          child: TabBarView(
+            children: [Sommelier(), Doctor(), Sastre(), Limpiadores()],
+          ),
         ),
       ),
     );

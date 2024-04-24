@@ -13,7 +13,9 @@ class AfiliacionesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('Afiliaciones'),
+      ),
       drawer: Drawer(
         backgroundColor: Colors.white,
         child: ListView(
