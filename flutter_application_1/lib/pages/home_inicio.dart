@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/contratos_page.dart';
 import 'package:flutter_application_1/pages/servicios_page.dart';
 import 'package:flutter_application_1/widgets/menuburger.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class HomeInicio extends StatelessWidget {
   const HomeInicio({super.key});

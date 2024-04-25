@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/afiliaciones_page.dart';
-import 'package:flutter_application_1/pages/home_inicio.dart';
-import 'package:flutter_application_1/pages/home_page.dart';
-import 'package:flutter_application_1/pages/hoteles_page.dart';
-import 'package:flutter_application_1/pages/perfil_page.dart';
-import 'package:flutter_application_1/pages/servicios_page.dart';
 import 'package:flutter_application_1/widgets/contratos_card.dart';
 import 'package:flutter_application_1/widgets/menuburger.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class ContratosPage extends StatelessWidget {
   const ContratosPage({super.key});
